@@ -6,17 +6,18 @@ This repository demonstrates how to load JSON data into MongoDB with Python, que
 
 ```text
 .
-├── car_data.json
+├── data
+│   ├── car_data.json
+│   └── restaurant_data.json
 ├── python_mongodb_cars.ipynb
 ├── python_mongodb_restaurants.ipynb
 ├── requirements.txt
-├── restaurant_data.json
 └── README.md
 ```
 
 ## Data
 
-### Cars: `car_data.json`
+### Cars: `data/car_data.json`
 
 The car data is a JSON array of vehicle offers. Records include information such as:
 
@@ -29,7 +30,7 @@ Some dealer details are intentionally anonymized as `***confidential***`.
 
 The cars notebook imports these records into the `car_database` database and `car_collection` collection. It queries petrol cars with prices between CHF 10,000 and CHF 120,000 and more than 125 PS, then aggregates prices by brand and creates charts.
 
-### Restaurants: `restaurant_data.json`
+### Restaurants: `data/restaurant_data.json`
 
 The restaurant data follows a GeoJSON-like structure. Each record contains a `Feature` with:
 
@@ -50,7 +51,7 @@ provided by the existing `devcontainer.json` setup.
 The MongoDB server is also part of this setup and must be running before the
 notebooks are executed.
 
-The notebooks currently use `/workspace/car_data.json` and `/workspace/restaurant_data.json`. Run them from this workspace, or change those paths in the data-loading cells when using the repository elsewhere.
+The notebooks currently use `/workspace/data/car_data.json` and `/workspace/data/restaurant_data.json`. Run them from this workspace, or change those paths in the data-loading cells when using the repository elsewhere.
 
 The notebooks use the hostname `mongo`. If MongoDB runs under another
 hostname or port, update the `MongoClient` connection string in both

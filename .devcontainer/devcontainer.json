@@ -3,6 +3,11 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "python",
     "workspaceFolder": "/workspace",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    },
  	"customizations": {
 		"vscode": {
 			"extensions": [
