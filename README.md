@@ -71,6 +71,9 @@ npm install
 npm run dev
 ```
 
+The dependency installation step is needed only once for a fresh Codespace or
+after dependencies change. On later starts, run only `npm run dev`.
+
 Open the local URL shown in the terminal, usually
 `http://localhost:5173/`. To create a production build instead, run
 `npm run build` and preview it with `npm run preview`.
