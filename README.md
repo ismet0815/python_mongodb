@@ -57,6 +57,24 @@ The notebooks use the hostname `mongo`. If MongoDB runs under another
 hostname or port, update the `MongoClient` connection string in both
 notebooks.
 
+## Run the MQL Tutorial
+
+The repository also includes an interactive browser tutorial in
+`mql-tutorial`. It runs with Vite and uses bundled sample data, so MongoDB is
+not required for the tutorial.
+
+From the workspace root, run:
+
+```bash
+cd mql-tutorial
+npm install
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually
+`http://localhost:5173/`. To create a production build instead, run
+`npm run build` and preview it with `npm run preview`.
+
 ## Development Container Architecture
 
 The `.devcontainer/docker-compose.yml` file defines two separate containers, not one:
